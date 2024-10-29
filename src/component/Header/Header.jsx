@@ -8,6 +8,7 @@ export default function Header() {
             <Link style={{'margin-right':'20px'}} to="/about">About</Link>
             <Link style={{'margin-right':'20px'}} to="/contact">Contact</Link>
             <Link style={{'margin-right':'20px'}} to="/users">Users</Link>
+            <Link style={{'margin-right':'20px'}} to="/posts">Posts</Link>
         </nav>
     </div>
   )
