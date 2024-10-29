@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom"
+import { useLoaderData, useNavigate } from "react-router-dom"
 
 export default function PostDetails() {
     const post = useLoaderData();
@@ -8,12 +8,17 @@ export default function PostDetails() {
         padding : '10px',
         margine : '10px',
     }
+    const navigate = useNavigate();
+    const handleGoBackBtn = () =>{
+        navigate(-1)
+    }
 
   return (
     <div style={userStyle}>
         <h6>{id}</h6>
         <h3>{title}</h3>
         <p>{body}</p>
+        <button onClick={handleGoBackBtn}>Go back</button>
     </div>
   )
 }
