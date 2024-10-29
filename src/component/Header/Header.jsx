@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <div>
         <nav >
-            <a  href="/">Home</a>
-            <a style={{'margin':'20px'}} href="/about">About</a>
-            <a href="/contact">Contact</a>
+            <Link style={{'margin-right':'20px'}} to="/">Home</Link>
+            <Link style={{'margin-right':'20px'}} to="/about">About</Link>
+            <Link style={{'margin-right':'20px'}} to="/contact">Contact</Link>
+            <Link style={{'margin-right':'20px'}} to="/users">Users</Link>
         </nav>
     </div>
   )
